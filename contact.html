@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>TRAVEL WEBSITE | Contact Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>TRAVEL WEBSITE | Contact Page</title>
 </head>
+
 <body>
-    <nav class="navbar bg-dark">
-        <div class="container">
-            <h1 class="logo lg-heading text-light">WT</h1>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
-                <li class="nav-item"><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar bg-dark text-white">
+    <div class="container">
+      <p class="navbar__logo lg-heading"><i class="fa-solid fa-f"></i>nT</p>
+      <ul class="navbar__list">
+        <li><a class="general-text" href="./index.html">HOME</a></li>
+        <li><a class="general-text" href="./about.html">ABOUT</a></li>
+        <li><a class="general-text" href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="contact-form">
-        <div class="container">
-            <div class="form-wrapper">
-                <div class="company-address">
-                    <div class="address-group">
-                        <i class="fas fa-map-marker-alt fa-3x text-red"></i>
-                        <h2 class="text-gray md-heading">Location</h2>
-                        <p>#2661 Janakpuri Colony, city name, town name</p>
-                    </div>
-                    <div class="address-group">
-                        <i class="fas fa-envelope fa-3x text-red"></i>
-                        <h2 class="text-gray md-heading">Email</h2>
-                        <p>qasim1988@mycompany.com</p>
-                    </div>
-                    <div class="address-group">
-                        <i class="fas fa-phone-square-alt fa-3x text-red"></i>
-                        <h2 class="text-gray md-heading">Call</h2>
-                        <p>+923446538942</p>
-                    </div>
-                    <img src="./img/company-img.jpg" alt="Company Image">
-                </div>
-                <form action="" class="form">
-                    <h1 class="lg-heading text-black">Contact Us</h1>
-                    <p class="text-gray">Let us know your questions, suggestions and concerns by filling out the form</p>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea name="" id="message"></textarea>
-                    </div>
-                    <button type="submit" class="form-btn">Submit</button>
-                </form>
-            </div>
+  <section class="contact">
+    <div class="contact__wrapper container">
+      <div class="company-address bg-white">
+        <div class="company-address__group">
+          <i class="fas fa-map-marker-alt fa-3x company-address__icon text-red"></i>
+          <h2 class="company-address__heading text-gray md-heading">Location</h2>
+          <p>#2661 Janakpuri Colony, city name, town name</p>
         </div>
-    </section>
+        <div class="company-address__group">
+          <i class="fas fa-envelope fa-3x company-address__icon text-red"></i>
+          <h2 class="company-address__heading text-gray md-heading">Email</h2>
+          <p>qasim1988@mycompany.com</p>
+        </div>
+        <div class="company-address__group">
+          <i class="fas fa-phone-square-alt fa-3x company-address__icon text-red"></i>
+          <h2 class="company-address__heading text-gray md-heading">Call</h2>
+          <p>+923407852942</p>
+        </div>
+        <div class="img-div">
+          <img src="./img/company-img.jpg" alt="Company Image">
+          <div class="img-content">
+            <h3 class="sm-headind text-red">buy things at amazing price</h3>
+            <a href="#submit" class="btn btn--secondary text-red">buy now</a>
+          </div>
+        </div>
+      </div>
 
-    <footer class="footer">
-        <div class="social-media-links">
-            <i class="fab fa-facebook fa-4x"></i>
-            <i class="fab fa-twitter fa-4x"></i>
-            <i class="fab fa-instagram fa-4x"></i>
-        </div>
-        <p>World Travel &copy; 2020, All rights Reserved</p>
-    </footer>
+      <div class="form-div bg-white">
+        <h2 class="form-div__heading text-gray md-heading">Contact Us</h2>
+        <p>Let us know your questions, suggestions, and concerns by filling out the form</p>
+
+        <form class="contact-form">
+          <fieldset class="contact-form__fieldset">
+            <legend class="sm-heading">Contact Information</legend>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" pattern="03\d{2}\d{2}\d{2}\d{3}" placeholder="0300-00-00-000"
+              required>
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </fieldset>
+
+          <button type="submit" class="contact-form__btn btn sm-heading text-white">SUBMIT</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="social-media-links">
+      <i class="fab fa-facebook fa-4x lg-heading"></i>
+      <i class="fab fa-twitter fa-4x lg-heading"></i>
+      <i class="fab fa-instagram fa-4x lg-heading"></i>
+    </div>
+    <p>World Travel &copy; 2020, All rights Reserved</p>
+  </footer>
 </body>
+
 </html>
